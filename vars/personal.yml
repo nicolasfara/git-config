@@ -1,0 +1,5 @@
+# => inherits: generic, with-chromium, with-github <= #
+
+user:
+    username: nicolasfara
+    email: nicolas.farabegoli@gmail.com

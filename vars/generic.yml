@@ -1,0 +1,23 @@
+features:
+    - git
+
+user:
+    name: Nicolas Farabegoli
+
+color:
+    branch:
+        current: yellow bold
+        local: green bold
+        remote: cyan bold
+
+    diff:
+        meta: yellow bold
+        frag: magenta bold
+        old: red bold
+        new: green bold
+        whitespace: red reverse
+
+    status:
+        added: green bold
+        changed: yellow bold
+        untracked: red bold

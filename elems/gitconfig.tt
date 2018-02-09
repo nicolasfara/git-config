@@ -1,0 +1,46 @@
+<%
+    define_locals do
+        variable "user.name", as: :name
+        variable "user.email", as: :email
+        variable "user.username", as: :username
+        variable "color.branch.current", as: :current
+        variable "color.branch.local", as: :local
+        variable "color.branch.remote", as: :remote
+        variable "color.diff.meta", as: :meta
+        variable "color.diff.frag", as: :frag
+        variable "color.diff.old", as: :old
+        variable "color.diff.new", as: :new
+        variable "color.diff.whitespace", as: :whitespace
+        variable "color.status.added", as: :added
+        variable "color.status.changed", as: :changed
+        variable "color.status.untracked", as: :untracked
+    end
+%>
+[user]
+	email = <%= local! :email %>
+	name = <%= local! :name %>
+    username = <%= local! :username %>
+
+[color]
+	ui = auto
+
+[color "branch"]
+	current = <%= local! :current %>
+	local = <%= local! :local %>
+	remote = <%= local! :remote %>
+
+[color "diff"]
+	meta = <%= local! :meta %>
+	frag = <%= local! :frag %>
+	old = <%= local! :old %>
+	new = <%= local! :new %>
+	whitespace = <%= local! :whitespace %>
+
+[color "status"]
+	added = <%= local! :added %>
+	changed = <%= local! :changed %>
+	untracked = <%= local! :untracked %>
+<% if has_feature? :github %>
+[github]
+    user = <%= local! :username %>
+<% end %>

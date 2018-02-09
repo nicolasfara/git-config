@@ -1,0 +1,6 @@
+elems:
+    - src: ^(gitconfig)$
+      dst: ~/.gitconfig
+      only:
+          features:
+              - git
