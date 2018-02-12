@@ -1,3 +1,4 @@
+# => inherits: generic, with-chromium <= #
 
 user:
     name: nicolas-farabegoli
