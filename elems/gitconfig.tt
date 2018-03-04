@@ -14,13 +14,14 @@
         variable "color.status.added", as: :added
         variable "color.status.changed", as: :changed
         variable "color.status.untracked", as: :untracked
+        variable "gpg.key", as: :gpg_key
     end
 %>
 [user]
 	email = <%= local! :email %>
 	name = <%= local! :name %>
   username = <%= local! :username %>
-  signinkey = 365593F7CEC0D4BC
+  signinkey = <%= local! :gpg_key %>
 
 [commit]
 	gpgsign = true

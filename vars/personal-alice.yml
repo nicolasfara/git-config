@@ -1,0 +1,7 @@
+# => inherits: personal <= #
+
+gpg:
+  key: 365593F7CEC0D4BC
+
+
+# vim: set filetype=eruby.yaml :
