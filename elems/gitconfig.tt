@@ -19,7 +19,8 @@
 [user]
 	email = <%= local! :email %>
 	name = <%= local! :name %>
-    username = <%= local! :username %>
+  username = <%= local! :username %>
+  signinkey = 365593F7CEC0D4BC 
 
 [color]
 	ui = auto
@@ -42,5 +43,8 @@
 	untracked = <%= local! :untracked %>
 <% if has_feature? :github %>
 [github]
-    user = <%= local! :username %>
+  user = <%= local! :username %>
 <% end %>
+
+[gpg]
+  program = gpg2
