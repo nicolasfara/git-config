@@ -23,7 +23,7 @@
   signinkey = 365593F7CEC0D4BC
 
 [commit]
-	pgpsign = true
+	gpgsign = true
 
 [color]
 	ui = auto
