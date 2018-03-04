@@ -20,7 +20,7 @@
 	email = <%= local! :email %>
 	name = <%= local! :name %>
   username = <%= local! :username %>
-  signinkey = 365593F7CEC0D4BC 
+  signinkey = 365593F7CEC0D4BC
 
 [commit]
 	pgpsign = true
